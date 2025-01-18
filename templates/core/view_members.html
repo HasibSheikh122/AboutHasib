@@ -1,0 +1,8 @@
+<h2>Members List</h2>
+<ul>
+    {% for member in members %}
+        <li>{{ member.name }} | {{ member.email }} | <a href="{% url 'update_member' member.pk %}">Edit</a> | 
+        <a href="{% url 'delete_member' member.pk %}">Delete</a></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'add_member' %}">Add New Member</a>
