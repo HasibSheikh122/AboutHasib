@@ -113,6 +113,12 @@
 <body>
 
 <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            {% include 'core/header.html' %}
+        </div>
+
+    </div>
     <div class="form-container">
         <div class="form-header">
             <h2>Update Member: {{ member.name }}</h2>
@@ -149,6 +155,12 @@
         <div class="back-link">
             <a href="{% url 'view_members' %}">Back to Members List</a>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 mt-5">
+            {% include 'core/footer.html' %}
+        </div>
+
     </div>
 </div>
 

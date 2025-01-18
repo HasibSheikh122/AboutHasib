@@ -92,6 +92,13 @@
 <body>
 
 <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            {% include 'core/header.html' %}
+        </div>
+
+    </div>
+    
     <div class="form-container">
         <div class="form-header">
             <h2>Are you sure you want to delete {{ member.name }}?</h2>
@@ -107,6 +114,12 @@
         <div class="cancel-link">
             <a href="{% url 'view_members' %}">Cancel</a>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 mt-5">
+            {% include 'core/footer.html' %}
+        </div>
+
     </div>
 </div>
 
