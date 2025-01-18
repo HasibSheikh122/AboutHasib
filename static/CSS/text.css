@@ -37,9 +37,9 @@
 
 
 body {
-    background: linear-gradient(45deg, #7F00FF, #6100af, #E100FF, #f7ff00, #000046, #1CB5E0);
+    background: linear-gradient(45deg, #7F00FF, #6100af, #E100FF, #000046, #1CB5E0);
     background-size: 400% 400%;
-    animation: gradientBackground 8s infinite;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,11 +47,7 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
-@keyframes gradientBackground {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-}
+
 
 
 
